@@ -1,0 +1,32 @@
+while wait (1) do
+local Event = game:GetService("Workspace").Living["kirill_petux2013"].RemoteFunction
+Event:InvokeServer("LearnSkill", {
+	["Skill"] = "Worthiness V", 
+	["SkillTreeType"] = "Character"
+})
+ 
+local A_1 = "EndDialogue"
+local A_2 = 
+{
+	["NPC"] = "Rib Cage of The Saint's Corpse", 
+	["Option"] = "Option1", 
+	["Dialogue"] = "Dialogue2"
+}
+local Event = game:GetService("Workspace").Living["kirill_petux2013"].RemoteEvent
+Event:FireServer("EndDialogue", {
+	["NPC"] = "Rib Cage of The Saint's Corpse", 
+	["Option"] = "Option1", 
+	["Dialogue"] = "Dialogue2"
+})
+
+if game:GetService("Workspace").Living["kirill_petux2013"].SummonedStand then
+    local A_1 = "EndDialogue"
+    local A_2 = 
+    {
+        ["NPC"] = "Rokakaka", 
+        ["Option"] = "Option1", 
+        ["Dialogue"] = "Dialogue2"
+    }
+    local Event = game:GetService("Workspace").Living["kirill_petux2013"].RemoteEvent
+end
+end
